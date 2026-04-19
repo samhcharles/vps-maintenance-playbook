@@ -27,11 +27,13 @@ If an agent or model is about to do meaningful work, it should read this folder 
 - Create or revise a runbook when the same operation happens more than once
 - Do not leave important context only in chat
 
-## Current Anchors
+## Example Anchors
 
-- OpenClaw framework repo: `/home/samhcharles/repos/hank-duck/openclaw`
-- Discord bot runtime repo: `/home/samhcharles/srv/bots/chopsticks-lean`
-- Workspace custom agent: `/home/samhcharles/.github/agents/vps-maintenance-planner.agent.md`
+For your own environment, define these paths:
+
+- OpenClaw framework repo location
+- Discord bot runtime repo location
+- Workspace custom agent location
 
 ## Definition Of Done For Environment Work
 

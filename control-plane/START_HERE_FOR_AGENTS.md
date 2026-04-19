@@ -38,7 +38,9 @@ Do not assume chat history is complete. Use the control plane as the durable con
 
 ## Canonical Paths
 
-- Control plane: `/home/samhcharles/control-plane`
-- OpenClaw: `/home/samhcharles/repos/hank-duck/openclaw`
-- Chopsticks lean: `/home/samhcharles/srv/bots/chopsticks-lean`
-- Workspace custom agent: `/home/samhcharles/.github/agents/vps-maintenance-planner.agent.md`
+*These paths will vary by user. Examples below for reference:*
+
+- Control plane: `$WORKSPACE_ROOT/control-plane`
+- OpenClaw: `$WORKSPACE_ROOT/repos/hank-duck/openclaw`
+- Chopsticks lean: `$WORKSPACE_ROOT/srv/bots/chopsticks-lean`
+- Workspace custom agent: `$WORKSPACE_ROOT/.github/agents/vps-maintenance-planner.agent.md`

@@ -80,24 +80,20 @@
 
 ### Known Live Directories
 
-- Bot directories observed:
-  - `/home/samhcharles/srv/bots/chopsticks`
-  - `/home/samhcharles/srv/bots/chopsticks-lean`
-- Agent directories observed:
-  - `/home/samhcharles/srv/agents/nqita`
-- Volume directories observed:
-  - `/home/samhcharles/srv/volumes/chopsticks`
-  - `/home/samhcharles/srv/volumes/nqita`
-- Log directories observed:
-  - `/home/samhcharles/srv/logs/chopsticks`
-  - `/home/samhcharles/srv/logs/nqita`
+- Bot directories exist in the expected service paths
+- Agent directories reserved for future runtime use
+- Log and volume directories reserved for service organization
+- Proxy configuration directory reserved for reverse proxy setup
 
 ### Directory State During Deep Audit
 
-- `/home/samhcharles/srv/agents/nqita` existed but was empty during the deeper audit
-- `/home/samhcharles/srv/logs/chopsticks` and `/home/samhcharles/srv/logs/nqita` existed but were empty during the deeper audit
-- `/home/samhcharles/srv/volumes/chopsticks` and `/home/samhcharles/srv/volumes/nqita` existed but were empty during the deeper audit
-- `/home/samhcharles/srv/proxy/caddy` existed but was empty during both audit passes
+Several reserved paths exist but were empty during audit:
+- Agent directories
+- Log directories
+- Volume directories
+- Proxy configuration directories
+
+Verify intended use or clean up as part of maintenance planning.
 
 ## Backups And Restore
 
@@ -136,10 +132,9 @@
 
 ## Remaining Unknowns
 
-These still need to be documented explicitly or verified in a deeper audit:
+These still need to be documented or verified:
 
-- Whether any privileged systemd units exist outside the unprivileged audit view
-- What domains, TLS setup, and upstream routes are currently intended if reverse proxying is reintroduced later
-- Whether `/home/samhcharles/srv/agents/nqita` is intended for future runtime use or is only a reserved path right now
-- Whether `/home/samhcharles/srv/volumes/chopsticks` and `/home/samhcharles/srv/volumes/nqita` are reserved placeholders or remnants from older layouts
-- Which tasks must always be staged in WSL before touching the VPS
+- Privileged systemd units outside unprivileged audit view
+- Reverse proxy domains and TLS setup if reintroduced
+- Reserved agent and volume paths: intended use or legacy
+- WSL-required staging steps before VPS changes
