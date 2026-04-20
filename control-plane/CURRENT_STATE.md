@@ -31,7 +31,7 @@ Health endpoint: `curl http://127.0.0.1:9100/healthz` returns `{"ok":true}` when
 `chopsticksctl.sh` `bot_exec()` and `health_check()` were hardcoded to `chopsticks-bot` (wrong container name) and `8080/health` (wrong endpoint). Fixed:
 - `bot_exec()` now uses `docker compose exec bot`
 - `health_check()` now uses `curl http://127.0.0.1:9100/healthz` (matching docker-compose healthcheck)
-- Fix committed to `samhcharles/chopsticks-lean`
+- Fix committed to `madebymadhouse/chopsticks-lean`
 
 ## What Is Working
 

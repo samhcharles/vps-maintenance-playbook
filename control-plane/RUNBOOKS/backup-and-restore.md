@@ -2,7 +2,7 @@
 
 Use this when backing up or restoring the VPS bot database.
 
-This runbook is based on the real scripts in `samhcharles/chopsticks-lean`.
+This runbook is based on the real scripts in `madebymadhouse/chopsticks-lean`.
 
 ## Purpose
 
