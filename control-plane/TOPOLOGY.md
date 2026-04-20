@@ -36,7 +36,7 @@
 - Path: `/home/samhcharles/srv/bots/chopsticks-lean`
 - Role: Discord bot runtime and deployment target
 - Deploy model: live Git working tree on the VPS with Docker Compose runtime
-- Git remote: `https://github.com/samhcharles/chopsticks-lean`
+- Git remote: `https://github.com/madebymadhouse/chopsticks-lean`
 - Branch state during audit: `main` ahead of `origin/main` by 1 commit
 - Important docs:
   - `README.md`
