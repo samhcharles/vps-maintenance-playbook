@@ -24,6 +24,10 @@ This notebook exists to capture real operational knowledge so it survives beyond
 4. Open a PR using the PR template
 5. The Librarian runs a unification pass on any changes to standards or patterns
 
+Default workflow for Mad House repos:
+
+https://github.com/madebymadhouse/bot-dev-playbook/blob/main/AGENTIC_GIT_WORKFLOW.md
+
 ---
 
 ## Commit format
