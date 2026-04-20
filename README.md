@@ -109,11 +109,13 @@ All agents are in `.github/agents/`. The core ones for this repo:
 
 | Agent | What it does |
 |---|---|
-| `@vps-maintenance-planner` | VPS-specific maintenance — topology, safe change sequences, runbooks |
-| `@context-keeper` | Write session logs and handoffs after every maintenance session |
-| `@orchestrator` | Coordinate a full maintenance pass using the whole fleet |
-| `@security` | Security audit — exposed ports, Docker config, secrets on disk |
-| `@auditor` | Structured audit of runbooks, docs, and operational readiness |
+| [`@delegator`](./.github/agents/delegator.agent.md) | Your single entry point — describe what you want done, it picks the right agents and runs them in order |
+| [`@vps-maintenance-planner`](./.github/agents/vps-maintenance-planner.agent.md) | VPS-specific maintenance — topology, safe change sequences, runbooks |
+| [`@context-keeper`](./.github/agents/context-keeper.agent.md) | Write session logs and handoffs after every maintenance session |
+| [`@git-keeper`](./.github/agents/git-keeper.agent.md) | Branching, commits, PR descriptions, and keeping the git history clean |
+| [`@orchestrator`](./.github/agents/orchestrator.agent.md) | Coordinate a full maintenance pass using the whole fleet |
+| [`@security`](./.github/agents/security.agent.md) | Security audit — exposed ports, Docker config, secrets on disk |
+| [`@auditor`](./.github/agents/auditor.agent.md) | Structured audit of runbooks, docs, and operational readiness |
 
 Full agent roster: [madebymadhouse/agents](https://github.com/madebymadhouse/agents)
 
